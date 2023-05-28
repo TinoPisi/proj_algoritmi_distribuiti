@@ -1,7 +1,6 @@
 import uuid
 import time
 
-
 class Material(object):
     def __init__(self, name, name_person):
         self.id = uuid.uuid4()
@@ -10,4 +9,4 @@ class Material(object):
         self.inserted_by = name_person
 
     def get_info(self):
-        print("{0} - {1} - {2}, Inserted by: {3}.".format(self.name, self.id, self.arrive_date, self.inserted_by))
+        return str("{0} - {1} - {2}, Inserted by: {3}.".format(self.name, self.id, self.arrive_date, self.inserted_by))

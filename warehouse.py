@@ -34,7 +34,7 @@ class Warehouse(object):
 
     def store(self, name, item):
         try:
-            self.contents.append(item)
+            self.contents.append(Material(item, name))
             print("{0}: {2} inserito da {1}.".format(time.strftime("%d/%m/%Y %H.%M"), name, item))
             result = True
         except:
