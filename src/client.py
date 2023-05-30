@@ -10,8 +10,18 @@ piazzale = Proxy("PYRONAME:zp.piazzale")
 logger = Proxy("PYRONAME:zp.logger")
 
 def selection_menu():
-    option = int(input("Benvenuto nel sistema di ZP: \n 1: Deposita materiale; \n "
-                       "2: Preleva materiale; \n 3: Ottieni informazioni; \n 0: Termina \nScelta: ").strip())
+    """
+    La funzione stampa un menu con 3 voci e ritorna la scelta dell'utente come un integer.
+    :return: valore intero con la voce selezionata dall'utente.
+    """
+    check_value = True
+    while check_value:
+        try:
+            option = int(input("Benvenuto nel sistema di ZP: \n 1: Deposita materiale; \n "
+                            "2: Preleva materiale; \n 3: Ottieni informazioni; \n 0: Termina \nScelta: ").strip())
+            check_value = False
+        except:
+            print("ERRORE: valore errato")
     return option
 
 logged = False
