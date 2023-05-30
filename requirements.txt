@@ -1,3 +1,13 @@
+cffi==1.15.1
+cryptography==40.0.2
+maskpass==0.3.7
+pwinput==1.0.3
+pycparser==2.21
+pynput==1.7.6
+pyobjc-core==9.1.1
+pyobjc-framework-ApplicationServices==9.1.1
+pyobjc-framework-Cocoa==9.1.1
+pyobjc-framework-Quartz==9.1.1
 Pyro5==5.14
 serpent==1.41
-uuid==1.30
+six==1.16.0
